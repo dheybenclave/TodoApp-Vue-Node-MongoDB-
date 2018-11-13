@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+import jQuery from 'jQuery'
+
+global.jQuery = jQuery;
 
 Vue.config.productionTip = false
 
