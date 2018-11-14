@@ -50,5 +50,18 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dheybenclave/TodoApp-Vue-Node-MongoDB-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dheybenclave/TodoApp-Vue-Node-MongoDB-/issues"
+  },
+  "homepage": "https://github.com/dheybenclave/TodoApp-Vue-Node-MongoDB-#readme"
 }

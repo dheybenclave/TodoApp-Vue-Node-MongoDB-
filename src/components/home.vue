@@ -1,22 +1,8 @@
 <template>
   <div class="container-fluid">
-          <p class="label col-form-label-lg text-capitalize text-center">{{ msg }}</p>
+<p class="label col-form-label-lg text-capitalize text-center">{{ msg }}</p>
 
   <div class="row ">
-
-    <div class="col-sm">
-    <form>
-      <div class="form-group">
-        <label for="formGroupExampleInput">Example label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-      </div>
-      <div class="form-group">
-        <label for="formGroupExampleInput2">Another label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-      </div>
-    </form>
-    </div>
-    
     <div class="col-sm ">
  
         <div v-for="(data,index) in todo" :key="index"  >
@@ -34,7 +20,7 @@
                 </button>
               </div>
           </div>
-          <p  v-else>Yo don't have anythings to do , Enjoy It :)</p>
+          <p  v-else>Yo don't have anythings to do , Enjoy It :</p>
         </div>
 
 
@@ -72,6 +58,23 @@
 
     </div>
     </div>
+    <div class="col-sm">
+      </br></br></br>
+    <form class="offset-lg-2  col-lg-8  login small bg-light p-5 ">
+      <div class="form-group ">
+        <label for="formGroupExampleInput">Username</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Password</label>
+        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+    </div>
+    
+
    
   </div>
  
@@ -117,6 +120,10 @@ export default {
 }
 input {
   size: 96%;
-  border-color: rgba(12, 12, 12, 0);
+  /* border-color: rgba(12, 12, 12, 0); */
+}
+.login {
+    size: 92%;
+    font-size: 95%;
 }
 </style>
